@@ -23,6 +23,12 @@ int main()
     std::cout << "Adding single number to quantity." << std::endl;
     quant.Add(-3);
     quant.Print();
+    std::cout << "Adding single number which is already in quantity." << std::endl;
+    quant.Add(4);
+    quant.Print();
+    std::cout << "Adding single number which is already in quantity, but there is no change." << std::endl;
+    quant.AddUnique(4);
+    quant.Print();
     std::cout << "Size of current quantity is" << " " << quant.Size() << std::endl;
     std::cout << "4 is member of quantity" << " " << quant.IsMember(4) << std::endl;
     std::cout << "-11 is member of quantity" << " " << quant.IsMember(-11) << std::endl;

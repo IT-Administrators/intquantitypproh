@@ -31,8 +31,11 @@ namespace IntQuantityPpRoH
             // Default constructor.
             IntQuantityPp();
 
-            // Add element to qunatity.
+            // Add element to quantity. Doesn't check if element is already in quantity.
             void Add(int el);
+
+            // Add element to quantity. Doesn't append element, if is is already member of quantity.
+            void AddUnique(int el);
 
             // Remove element from quantity.
             void Remove(int el);
@@ -46,7 +49,7 @@ namespace IntQuantityPpRoH
             // Print quantity to stdout.
             void Print() const;
 
-            // Clear quantity. Remove all elements.
+            // Clear quantity. Removes all elements.
             void Clear();
 
             // Get max element in quantity.
