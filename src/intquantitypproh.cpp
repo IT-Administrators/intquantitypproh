@@ -114,6 +114,17 @@ int IntQuantityPpRoH::IntQuantityPp::GetMin() const
     return res;
 }
 
+int IntQuantityPpRoH::IntQuantityPp::ArithmeticAverage() const
+{
+    int sum = 0;
+    // Sum all elements and divide by vector size.
+    for (int i = 0; i < vec.size(); i++)
+    {
+        sum += vec[i];
+    }
+    return sum / vec.size();
+}
+
 int IntQuantityPpRoH::IntQuantityPp::Find(int el) const
 {
     for (int i = 0; i < IntQuantityPpRoH::IntQuantityPp::poscount; i++)

@@ -35,6 +35,9 @@ int main()
     std::cout << "Smallest element is:" << " " << quant.GetMin() << std::endl;
     std::cout << "Highest element is:" << " " << quant.GetMax() << std::endl;
     quant.Print();
+    std::cout << "The arithmetic average is:" << " " << std::endl;
+    std:: cout << quant.ArithmeticAverage() << std::endl;
+    
     std::cout << "Removing element." << std::endl;
     quant.Remove(5);
     quant.Print();

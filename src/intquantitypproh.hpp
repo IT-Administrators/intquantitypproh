@@ -57,6 +57,9 @@ namespace IntQuantityPpRoH
 
             // Get min element in quantity.          
             [[nodiscard]] int GetMin() const;          
+
+            // Arithmetic average.
+            [[nodiscard]] int ArithmeticAverage() const;
         
         private:
             // Position counter.
